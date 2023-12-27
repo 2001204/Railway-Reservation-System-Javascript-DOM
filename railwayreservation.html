@@ -1,0 +1,188 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://www.shutterstock.com/image-vector/illustration-indian-train-260nw-752645389.jpg" type="image/x-icon">
+    <title>Railway Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar bg-body-tertiary" >
+      <div class="container-fluid" id="head">
+        <a class="navbar-brand" href="#"  >
+          <img src="https://www.shutterstock.com/image-vector/illustration-indian-train-260nw-752645389.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <b>Indian Railways</b>
+        </a>
+        <b>
+          <a href="#"> Home </a>&emsp;<a href="#">Ministry of Railways </a>&emsp;<a href="#">PNR Enquiry </a>&emsp;<a href="#">Seat-Availability </a> &emsp;<a href="#">Enquiry </a>&emsp;<a href="#">Contact us</a>&emsp; <a href="#">  FAQs </a>
+        </b>
+      </div>
+    </nav>
+    <marquee behavior=alternate direction="rights" style="color: rgb(255, 255, 255); font-weight: bold; font-size: 20px;">WPT Spot Exam | 01/12/2023 | Invaligator : Aaditya Kansana sir | Student: Dipak Wani (PRN: 230940520019)</marquee>
+
+
+    <div class="container1">
+
+      <div id="box">
+          <center><img width="100px" height="100px" src="https://www.shutterstock.com/image-vector/illustration-indian-train-260nw-752645389.jpg" alt="">
+          <span><h2>&succcurlyeq;<u>Train Reservation System</u> &succcurlyeq;</h2></span></center>
+      
+          <form id="reservationForm">
+
+          <label for="trainName" class="form-label">&succcurlyeq; Train name </label>
+          <input type="text" id="trainName"  class="form-control" >
+
+            <label for="trainNumber" class="form-label">&succcurlyeq; Train Number</label>
+            <input type="number" id="trainNumber" class="form-control" >
+
+            <label for="sClass" class="form-label">&succcurlyeq; Class </label>
+                <select id="sClass" class="form-select" aria-label="Default select example">
+                      <option selected>select</option>
+                      <option value="First class">firstclasse</option>
+                      <option value="second class">second class</option>
+                      <option value="AC">AC</option>
+                      <option value="Sleeper">Sleeper</option>
+                      <option value="General">General</option>
+                </select>
+
+            <label for="origin" class="form-label">&succcurlyeq; Origin Station </label>
+            <input type="text" id="origin" class="form-control" >
+
+            <label for="destination" class="form-label">&succcurlyeq; Destination Station</label>
+            <input type="text" id="destination" class="form-control" >
+
+            <label for="Amount" class="form-label">&succcurlyeq; Ticket Amount</label>
+            <input type="number" id="Amount" class="form-control" >
+
+            <label for="date" class="form-label">&succcurlyeq; Date and Time</label>
+            <input type="datetime-local" id="date" class="form-control" ><hr>
+
+            <button type="button" class="btn btn-primary" onclick="addReservation()">Add Reservation</button>
+
+            <button type="reset" class="btn btn-danger">Reset Form</button>
+        </form>
+      </div>
+    </div>
+
+
+<div class="container2">
+   <h4 align="center">Reservation Table</h4><hr>
+
+  <table align="center" id="reservationTable" border="1" class="table table-success table-striped" border="2" cellpadding = 10px cellspacing= 20px>
+    <thead align="text-center">
+      <tr>
+          <th scope="col">Train Name | </th>
+          <th scope="col">Train Number |</th>
+          <th scope="col">class |</th>
+          <th scope="col">Origin |</th>
+          <th scope="col" >Desination |</th>
+          <th scope="col">Ticket Amount |</th>
+          <th scope="col">Date |</th>
+          <th scope="col">Action |</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+    </tbody>
+   
+  </table>
+
+</div>
+
+    
+    <script src="script.js"></script>
+   
+
+    <footer class="valign-text-bottom" id=foot align=center> 
+      WPT Spot Exam <br>
+      <u>Designed and Developed by : Dipak Wani, PG-DAC, CDAC, Mumbai(KH) </u><br>
+      <p>&copy; 2023 CDAC | All rights reserved.</p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Train Reservation System</h1>
+
+
+        <form id="reservationForm">
+            <label for="trainName">Train Name:</label>
+            <input type="text" id="trainName" required>
+
+            <label for="trainNumber">Train Number:</label>
+            <input type="text" id="trainNumber" required>
+
+            <label for="trainClass">Class:</label>
+            <select id="trainClass" required>
+                <option value="firstClass">First Class</option>
+                <option value="secondClass">Second Class</option>
+            </select>
+
+            <label for="origin">Origin Station:</label>
+            <input type="text" id="origin" required>
+
+            <label for="destination">Destination Station:</label>
+            <input type="text" id="destination" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="ticketAmount">Ticket Amount:</label>
+            <input type="text" id="ticketAmount" required>
+
+            <label for="trainTime">Time of Train:</label>
+            <input type="time" id="trainTime" required>
+
+            <button type="button" onclick="addReservation()">Add Reservation</button>
+        </form>
+
+    
+        <table id="reservationTable">
+     
+            <tr>
+                <th>Train Name</th>
+                <th>Train Number</th>
+                <th>Class</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Date</th>
+                <th>Ticket Amount</th>
+                <th>Time of Train</th>
+                <th>Action</th>
+            </tr>
+           
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>  -->

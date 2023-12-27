@@ -1,0 +1,76 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(189, 248, 248);
+    margin-top: 50px;
+    /* background-image: url(https://wallpaperset.com/w/full/5/2/c/509754.jpg); */
+    background-image: url(https://wallpapercrafter.com/desktop/1074-train-railway-forest-lake-travel-4k.jpg);   
+    background-size: 100%;
+}
+
+.container1{
+    margin: 20px auto;
+    padding: 20px;
+    margin-left: 60px;
+    width : 50%;
+    /* background-color: rgb(122, 255, 233); */
+    padding: 20px;
+    background: no-repeat;
+    box-shadow: 0 0 8px rgb(251, 26, 26); 
+    background: linear-gradient(45deg, rgb(251, 150, 114),rgb(161, 255, 255));
+    
+}
+
+.container2{
+    margin: 20px auto;
+    padding: 20px;
+    width : 92%;
+    /* background-color: rgb(122, 255, 233); */
+    padding: 20px;
+    background: no-repeat;
+    box-shadow: 0 0 5px rgb(236, 251, 26); 
+    box-shadow: transparent;
+    background: linear-gradient(45deg, rgb(235, 114, 251),rgb(194, 192, 192));
+
+}
+
+#head{
+    margin-top: -10px;
+    padding: 10px;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+    background: linear-gradient(45deg, rgb(98, 228, 248),rgb(226, 252, 79));
+    text-decoration: none;
+}
+
+form{
+    margin-bottom: 20 px;
+}
+
+th, td{
+border: 1px solid red;
+padding: 10 px;
+text-align: left;
+}
+
+th{
+    background-color: aquamarine;
+}
+
+button{
+    background-color: rgb(255, 0, 157);
+    color: white;
+    padding: 10px 15 px;
+    border-radius: 10 px;
+    cursor: pointer;
+
+}
+
+#foot{
+    background-color: rgb(90, 89, 88);
+    color: white;
+}
+
+
